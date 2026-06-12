@@ -30,7 +30,7 @@ func TestValidatorFailed(t *testing.T) {
 	}
 
 	err := validate.Validate(payload)
-	if err != nil {
+	if err == nil {
 		t.Fatal("expected validation error")
 	}
 }
